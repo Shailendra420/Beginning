@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script type ="text/javascript"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#disappear").hide();
+		
+		$("#hide").click(function(){
+			register();
+			$("#disappear").fadeIn("3000");
+			
+		});
+		$("#clearAll").click(function(){
+			clearAll();
+			$("#disappear").hide(2000);
+		});
+	});
+	</script>
+	</head>
+	<body>
+		<div class ="main">
+			<article>
+				<header>
+					<h1 class ="h1Custom">Have me make stuff for you.</h1>
+					<p class ="pCustom">Odio turpis amet sed consequat eget posuere consequat.</p>
+				</header>
+				<div class ="outer">
+					<div class ="innerOut">
+						<div class ="inner1">
+						<div class ="formRow">
+								<div class ="alignR0">
+									<input type="text" placeholder ="Name" class ="leftR0 commonIp">
+									<span class ="name"></span>
+								</div>
+							
+								<div class ="alignR0Right">
+									<input type ="text" placeholder ="Email" class ="rightR0 commonIp">
+									
+									<span class ="email"></span>
+								</div>
+							
+						</div>
+							<div class ="formRow">
+								<input type ="text" placeholder ="Subject" class ="midR1 commonIp">
+								<span class ="subject"></span>
+							</div>
+							<div class ="formRow">
+								
+								<textarea rows="4" cols="50" class ="midR2" placeholder ="Enter text here..."></textarea>
+							</div>
+							<div class ="formRow row3">
+								<a href ="#send" class ="leftR3" id ="hide">Send message</a>
+								<a href ="#clear" class ="rightR3" id = "clearAll">Clear form</a>
+							</div>
+						</div>
+						<div id ="disappear">
+							<div class ="left">
+								<div><p class ="font">You have entered the following details,</p></div>
+								<div class ="size">
+									<div class ="inline"><p class ="font">Your name : </p></div>
+									<div class ="inline"><p class ="verifyName fontInfo"></p></div>
+								</div>
+								<div class ="size">
+									<div class ="inline"><p class ="font">Your email : </p></div>
+									<div class ="inline"><p class ="verifyEmail fontInfo"></p></div>
+								</div>
+								<div class ="size">
+									<div class ="inline"><p class ="font inline3">Subject you selected : </p></div>
+									<div class ="inline"><p class ="verifySubject fontInfo"></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class ="inner2">
+						<div class ="icons">
+							<h3>Find me on..</h3>
+							<ul>
+								<li><i class="fa fa-twitter-square" aria-hidden="true" class ="pixel"></i></li>
+								<li><i class="fa fa-facebook-square" aria-hidden="true" class ="pixel"></i></li>
+								<li><i class="fa fa-pinterest-square" aria-hidden="true" class ="pixel"></i></li>
+								<li><i class="fa fa-linkedin-square" aria-hidden="true" class ="pixel"></i></li>
+								<li><i class="fa fa-tumblr-square" aria-hidden="true" class ="pixel"></i></li>
+								<li><i class="fa fa-google-plus-square" aria-hidden="true" class ="pixel"></i></li>
+								<li><i class="fa fa-github-square" aria-hidden="true" class ="pixel"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<ul class ="endUl">
+						
+						<li class ="align">&copy; All rights reserved.</li>
+						<li class ="align">Design : <a href ="http.//html5up.net" class ="bLink">HTML5 UP</a></li>
+						<li class ="align" id ="noBdr">Demo images : <a href ="http.//unsplash.com" class ="bLink">Unsplash</a></li>
+						
+					</ul>
+				</footer>
+			</article>
+		</div>
+		<script>
+			function register(){
+				var name = $(".leftR0").val();
+				var email = $(".rightR0").val();
+				var subject = $(".midR1").val();
+				var comment = $(".midR2").val();
+				if(name === ""){
+					$(".name").html("This field is mandatory.");
+					$(".verifyName").html("");
+					}
+					else if (email === ""){
+						$(".name").html("");
+						$(".verifyName").html(name);
+						$(".email").html("This field is mandatory.");
+						$(".verifyEmail").html("");
+					}
+					else if(subject === ""){
+						$(".email").html("");
+						$(".verifyEmail").html(email);
+						$(".subject").html("This field is mandatory.");
+						$(".verifySubject").html("");
+					}
+					else {
+						$(".name").html("");
+						$(".verifyName").html(name);
+						$(".email").html("");
+						$(".verifyEmail").html(email);
+						$(".subject").html("");
+						$(".verifySubject").html(subject);
+						
+					}
+					
+			}
+			
+			function clearAll(){
+				var name = $(".leftR0").val();
+				var email = $(".rightR0").val();
+				var subject = $(".midR1").val();
+				var comment = $(".midR2").val();
+				if ((name !== "" || name === "") || (email !== "" || email === "") || (email !== "" || email === "")){
+					$(".name").html("");
+					$(".email").html("");
+					$(".subject").html("");
+					$(".leftR0").val("");
+					$(".rightR0").val("");
+					$(".midR1").val("");
+					$(".verifyName").html("");
+					$(".verifyEmail").html("");
+					$(".verifySubject").html("");
+				}
+			}
+		</script>
+		<!--<script>
+				
+			function register(){
+				var name = document.getElementsByClassName("leftR0")[0].value;
+				
+				var email = document.getElementsByClassName("rightR0")[0].value;
+				var subject = document.getElementsByClassName("midR1")[0].value;
+				var comment = document.getElementsByClassName("midR2")[0].value;
+				if(name === ""){
+					document.getElementsByClassName("name")[0].innerHTML = "This field is mandatory.";
+					
+				}
+				 else if(email === ""){
+					document.getElementsByClassName("email")[0].innerHTML = "This field is mandatory.";
+					
+					document.getElementsByClassName("name")[0].innerHTML = "";
+				} else if (subject === ""){
+					document.getElementsByClassName("subject")[0].innerHTML = "This field is mandatory.";
+					
+					document.getElementsByClassName("email")[0].innerHTML = "";
+				} else {
+					document.getElementsByClassName("name")[0].innerHTML = "";
+					document.getElementsByClassName("email")[0].innerHTML = "";
+					document.getElementsByClassName("subject")[0].innerHTML = "";
+					alert("Your are registered.");
+					
+				}
+			}
+			function clearAll(){
+				var name = document.getElementsByClassName("leftR0")[0].value;
+				console.log("The name is " + name);
+				var email = document.getElementsByClassName("rightR0")[0].value;
+				var subject = document.getElementsByClassName("midR1")[0].value;
+				if(name !== "" || name === ""){
+					document.getElementsByClassName("name")[0].innerHTML = "";
+					document.getElementsByClassName("email")[0].innerHTML = "";
+					document.getElementsByClassName("subject")[0].innerHTML = "";
+					document.getElementsByClassName("leftR0")[0].value = "";
+					document.getElementsByClassName("rightR0")[0].value = "";
+					document.getElementsByClassName("midR1")[0].value = "";
+					document.getElementsByClassName("midR2")[0].value = "";
+					console.log("the name is " + name);
+					console.log("the email is " + email);
+					console.log("the subject is " + subject);
+				}
+			}
+		</script>-->
+		
+		
+	</body>
+</html>

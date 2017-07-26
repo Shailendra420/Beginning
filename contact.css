@@ -1,0 +1,221 @@
+body {
+	margin : 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color : aliceblue;
+}
+.main {
+	text-align : center;
+	width : 100%;
+	margin : 0px;
+	background-color : #303030;
+}
+article {
+	width : 90%;
+	margin : 0px 5%;
+}
+header {
+    font-size: 25px;
+}
+.h1Custom {
+	margin-top: 0px;
+    padding-top: 40px;
+}
+.inner1 {
+    width: 50%;
+    margin: auto;
+	height: 480px;
+	padding-left : 55px;
+}
+.formRow input , .formRow, .formRow textarea{
+	width : 90%;
+	margin-right: 20px;
+}
+.alignR0 {
+    width: 45%;
+    float: left;
+}
+input.midR1 {
+    width: 96%;
+}
+.alignR0Right {
+    width: 45%;
+    float: right;
+}
+.commonIp {
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+ textarea.midR2 {
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+	width: 96.3%;
+}
+
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+	padding :0px;
+}
+.formRow a {
+    display: inline-block;
+    margin: 10px 10px;
+}
+a.leftR3 {
+    text-decoration: none;
+    padding: 15px;
+    background-color: cadetblue;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.leftR3:hover {
+	background-color : #5f9eff;
+}
+a.rightR3 {
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 5px;
+}
+a.rightR3:hover {
+    background-color: coral;
+}
+div#disappear {
+    background-color: darkslategray;
+    border-radius: 8px;
+    margin: 20px;
+	width: 70%;
+    display: inline-block;
+}
+.left {
+    text-align: left;
+    padding: 15px;
+}
+/*span {
+    display: inline-block;
+}*/
+.inline {
+    display: inline-block;
+}
+p.font {
+	font-size : 1.5em;
+}
+a.bLink {
+    color: chocolate;
+}
+a.bLink:hover {
+    color: coral;
+}
+.innerOut {
+    border-bottom: 1px solid grey;
+}
+.icons {
+	border-bottom: 1px solid grey;
+}
+h3 {
+	font-size: 1.8em;
+    color: aliceblue;
+	margin: 30px 0px 0px 0px
+}
+i.fa.fa-twitter-square {
+	font-size : 50px;
+	padding : 20px 10px 0px 10px;
+}i.fa.fa-twitter-square:hover {
+	color : #2DAAE4;
+	cursor: pointer;
+	margin-top: -5px;
+}
+i.fa.fa-facebook-square {
+	font-size : 50px;
+	padding : 20px 10px 0px 10px;
+}i.fa.fa-facebook-square:hover {
+	color : #3C5A98;
+	margin-top: -5px;
+	cursor: pointer;
+}
+i.fa.fa-pinterest-square {
+	font-size : 50px;
+	padding : 20px 10px 0px 10px;
+}i.fa.fa-pinterest-square:hover {
+	color : #C92228;
+	margin-top: -5px;
+	cursor: pointer;
+}
+i.fa.fa-linkedin-square {
+	font-size : 50px;
+	padding : 20px 10px 0px 10px;
+}i.fa.fa-linkedin-square:hover {
+	color : #006599;
+	margin-top: -5px;
+	cursor: pointer;
+}
+i.fa.fa-tumblr-square {
+	font-size : 50px;
+	padding : 20px 10px 0px 10px;
+}i.fa.fa-tumblr-square:hover {
+	color : #51718A;
+	margin-top: -5px;
+	cursor: pointer;
+}
+i.fa.fa-google-plus-square {
+	font-size : 50px;
+	padding : 20px 10px 0px 10px;
+} i.fa.fa-google-plus-square:hover {
+	color : #DA2713;
+	margin-top: -5px;
+	cursor: pointer;
+} 
+i.fa.fa-github-square {
+	font-size : 50px;
+	padding : 20px 10px 0px 10px;
+}i.fa.fa-github-square:hover {
+	color : #FAFAFA;
+	margin-top: -5px;
+	cursor: pointer;
+}
+.endUl {
+	margin : 50px;
+}
+li.align {
+    padding: 0px 7px;
+}
+.bLink:hover {
+	color : blueviolet;
+}
+@media screen and (max-width: 768px) {
+.inner1 {
+    width: 92%;
+    padding-left: 8%;
+}
+input.leftR0 {
+    width: 90%;
+}
+input.rightR0 {
+    width: 90%;
+}
+input.midR1 {
+    width: 95%;
+}
+textarea.midR2 {
+    width: 95.3%;
+}
+a.leftR3 {
+    width: 25%;
+   
+}
+a.rightR3 {
+    width: 25%;
+   
+}
+div#disappear {
+    width: 90%;
+}
+.endUl {
+    margin: 35px 0px 35px 0px;
+}
+}
