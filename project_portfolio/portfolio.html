@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <script type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+<body class="entire">
+<nav class="navbar navbar-default border-radius">
+<div class="container-fluid menu">
+<div class="navbar-header">
+  <a class="navbar-brand bigf" href="#">myPortfolio</a>
+</div>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="portfolio.html#aboutPage" id="aboutLink" class="page">About</a></li>
+  <li><a href="portfolio.html#portfolioPage" id="portfolioLink" class="page">Portfolio</a></li>
+  <li><a href="portfolio.html#contactPage" id="contactLink" class="page">Contact</a></li>
+</ul>
+</div>
+</nav>
+  
+  <div class="container-fluid">
+    <div id="aboutPage" class="container background">
+      <div class="row form-group padding">
+        <div class="col-md-9 col-xs-12">
+           <p class="text-center textHeading">Web developer</p><hr class="hr">
+          <p class="textProperties">Front-end developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction devoted to functional programming and information architecture.</p>
+        </div>
+        <div class="col-md-3 col-xs-12"><img src="https://bit.ly/fcc-relaxing-cat" class="round img-responsive container"></div>
+      </div>
+      </div>
+    <div class="container section1" id="portfolioPage">
+		<h3 class="text-center font">Portfolio</h3>
+		<div class="row form-group">
+			<div class="container">
+				<div class="col-md-6">
+					<ul class="grid">
+						<li><img src="Screenshot (36).png" class="img-responsive img-center"></li>
+					</ul>
+				</div>
+			
+			 
+				<div class="col-md-6">
+					<ul class="grid">
+						<li><img src="Screenshot (37).png" class="img-responsive"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="container">
+				<div class="col-md-6">
+					<ul class="grid">
+						<li><img src="Screenshot (38).png" class="img-responsive"></li>
+					</ul>
+				</div>
+			 <!--</div>-->
+			<!--<div class="row form-group">-->
+				<div class="col-md-6">
+					<ul class="grid">
+						<li><img src="Screenshot (34).png" class="img-responsive"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div class="container contact" id="contactPage">
+		<h3 class="text-center font">Contact me</h3>
+		<div class="row form-group">
+			<div class="col-md-6">
+				<form>
+					<div class="form-item">
+						<!--<label for="name">Name</label>-->
+						<input id="name" type="text" placeholder="Name" required>
+						<label for="name">Name</label>
+
+					</div>
+					<div class="form-item">
+						<!--<label for="email">Email Address</label>-->
+						<input id="email" type="text" placeholder="Email Address" required>
+						<label for="email">Email Address</label>
+					</div>
+					<div class="form-item">
+						<!--<label for="phone">Phone number</label>-->
+						<input id="phone" type="tel" placeholder="Phone number" required>
+						<label for="phone">Phone number</label>
+					</div>
+					<div class="form-item">
+						<!--<label for="message">Message</label>-->
+						<textarea id="message" rows="5" cols="75" placeholder="Message" required></textarea>
+						<label for="message">Message</label>
+					</div>
+					<div>
+						<input type="submit" value="Send" class="left">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row above_footer">
+		<div class="col-md-6 text-center">
+			<h3 class="avro">ABOUT THIS PAGE</h3>
+			<p class="size">Made by <a href="" target="_blank">Shailendra Maurya</a>.</p>
+		</div>
+		<div class="col-md-6 text-center">
+			<h3 class="avro">AROUND THE WEB</h3>
+			<ul>
+				<li>
+					<a href="https://codepen.io/shailu_m/">
+						<i class="fa fa-codepen" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.freecodecamp.com/shailendra420">
+						<i class="fa fa-free-code-camp" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Shailendra420">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row footer">
+		<div>
+			<p class ="col-md-12 text-center padding">myPortfolio &copy; 2017. All rights reserved.</p>
+		</div>
+	</div>
+	
+  </div>
+    <script>
+		$(document).ready(function(){
+			//var page_url = window.location.href;
+			//alert(page_url);
+			//var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+			//var nav = page_id;
+			//alert(page_id);
+			/*$("#aboutLink").click(function(){
+				var page_url = window.location.href;
+				var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+				scroll();
+				alert(page_id);
+			});
+			$("#portfolioLink").click(function(){
+				var page_url = window.location.href;
+				var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+				scroll();
+				alert(page_id);
+			});
+			$("#contactLink").click(function(){
+				var page_url = window.location.href;
+				var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+				scroll();
+				alert(page_id);
+			});*/
+			$(".page").click(function (){
+				/*//var page_url = window.location.href;
+				//var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+				scroll();
+			});*/
+			//function scroll(){
+			var page_url = window.location.href;
+			var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+			if (page_id == "aboutPage") {
+				
+					$("html, body").animate({
+						scrollTop: $("#" + page_id).offset().top
+					},1000);
+				
+			}
+			//}
+			//function scrollPortfolio(){
+			else if (page_id == "portfolioPage") {
+				//$("#portfolioLink").click(function(){
+					$("html, body").animate({
+						scrollTop: $("#" + page_id).offset().top
+					},1000);
+				//});
+			}
+			//}
+			//function scrollContact(){
+			 else if (page_id == "contactPage") {
+				//$("#contactLink").click(function(){
+					$("html, body").animate({
+						scrollTop: $("#" + page_id).offset().top
+					},1000);
+				//});
+			}
+			//}//else {
+					//alert("Id not found.");
+			//}
+			});
+		});
+		
+	</script>  
+</body>
